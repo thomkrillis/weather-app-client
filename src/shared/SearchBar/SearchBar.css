@@ -1,0 +1,28 @@
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.Search-bar form {
+  display: inline-flex;
+}
+
+.Search-bar input#location {
+  font-size: calc(14px + 1vmin);
+  height: 4vmin;
+  margin-right: 5px;
+  border-radius: 3px;
+  padding-left: 8px;
+}
+
+.Search-bar input#submit {
+  background: #fff url('../../assets/images/magnifier.svg') no-repeat top left;
+  padding-left: 4vmin;
+  border: none;
+  border-radius: 100%;
+}
