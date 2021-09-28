@@ -49,7 +49,7 @@ function SearchBar() {
   );
 };
 
-const getCurrentTerm = (search: string): string => {
+export const getCurrentTerm = (search: string): string => {
   const keyValueMap = extractSearchTerms(search);
   return keyValueMap.s;
 };
