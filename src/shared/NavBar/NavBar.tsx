@@ -5,11 +5,11 @@ import logo from "../../assets/images/logo.svg";
 
 function NavBar() {
   return (
-    <div>
+    <div className="Nav-bar">
       <Link to="/">
         <img src={logo} className="Nav-logo" alt="logo" />
-        <p>Anemoi</p>
       </Link>
+      <h1>Anemoi</h1>
     </div>
   );
 }

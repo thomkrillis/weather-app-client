@@ -1,0 +1,10 @@
+.History {
+  width: 20vmin;
+  height: calc(100% - 2vmin);
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ccc;
+  padding: 1vmin;
+  text-align: left;
+}

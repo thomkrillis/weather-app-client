@@ -1,3 +1,20 @@
+.Nav-bar {
+  display: flex;
+  padding-top: 2vmin;
+  padding-left: 2vmin;
+  text-align: left;
+}
+
+.Nav-bar a {
+  display: inline-flex;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.Nav-bar h1 {
+  display: inline-flex;
+}
+
 .Nav-logo {
   height: 8vmin;
 }

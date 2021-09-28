@@ -2,6 +2,7 @@ import React from 'react';
 import './Search.css';
 import SearchBar from '../../shared/SearchBar/SearchBar';
 import NavBar from '../../shared/NavBar/NavBar';
+import History from '../../shared/History/History';
 
 function Search() {
   return (
@@ -11,6 +12,7 @@ function Search() {
       <p>
         Results here
       </p>
+      <History />
     </div>
   );
 }
