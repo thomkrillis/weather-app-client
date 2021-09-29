@@ -12,6 +12,7 @@ Consumes data via [weather-app-server](https://github.com/thomkrillis/weather-ap
 - [ ] CI/CD
 - [ ] Containerization
 - [ ] Documentation on redux store, css conventions
+- [ ] Refactor shared components to be state-agnostic (no selectors), only page components should access redux data
 
 ## Setup
 1. Clone the repo
@@ -20,8 +21,9 @@ Consumes data via [weather-app-server](https://github.com/thomkrillis/weather-ap
 1. Run `yarn start` to start the application
 
 ## TODO
-- [ ] Wire up to Node API
-- [ ] Replace weather store
-- [ ] Render out weather data
+- [x] Wire up to Node API
+- [x] Replace weather store
+- [x] Render out weather data
+- [ ] Add basic auth check
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,0 +1,21 @@
+.Home-logo {
+  height: 30vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Home-logo {
+    animation: Home-logo-spin infinite 20s linear;
+  }
+  .Home-logo.fast {
+    animation: Home-logo-spin infinite 1s linear;
+  }}
+
+@keyframes Home-logo-spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}

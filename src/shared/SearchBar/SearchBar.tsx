@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../app/hooks';
 import { increment, selectCurrent } from '../../state/locations/slice';
+import { incrementAsync } from '../../state/weather/slice';
 import './SearchBar.css';
 
 function SearchBar() {
@@ -18,6 +19,7 @@ function SearchBar() {
     if (currentTerm) {
       setTerm(currentTerm);
       dispatch(increment(currentTerm));
+      dispatch(incrementAsync(currentTerm.replace(/ /g, '')))
     }
   }, [location, dispatch]);
 
@@ -30,14 +32,14 @@ function SearchBar() {
     <div className="Search-bar">
       <form action="/" method="get" autoComplete="off" onSubmit={onSubmit}>
         <label htmlFor="location">
-          <span className="visually-hidden">Location (e.g. Bronx, NY)</span>
+          <span className="visually-hidden">Location (e.g. London, UK)</span>
         </label>
         <input
           value={term}
           onChange={(e) => setTerm(e.target.value)}
           type="text"
           id="location"
-          placeholder="Location (e.g. Bronx, NY)"
+          placeholder="Location (e.g. London, UK)"
         />
         <input
           type="submit"
