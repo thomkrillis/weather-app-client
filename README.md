@@ -9,10 +9,13 @@ Consumes data via [weather-app-server](https://github.com/thomkrillis/weather-ap
 ## Next Steps for Production-Ready
 - [ ] Linting
 - [ ] More extensive testing
+- [ ] Fix CSS on results page for mobile
 - [ ] CI/CD
 - [ ] Containerization
 - [ ] Documentation on redux store, css conventions
 - [ ] Refactor shared components to be state-agnostic (no selectors), only page components should access redux data
+- [ ] Type-ahead and Google Places integration for more structured, consistent, and reliable user input
+- [ ] Additional weather data, e.g. forecasts
 
 ## Setup
 1. Clone the repo
@@ -24,6 +27,5 @@ Consumes data via [weather-app-server](https://github.com/thomkrillis/weather-ap
 - [x] Wire up to Node API
 - [x] Replace weather store
 - [x] Render out weather data
-- [ ] Add basic auth check
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
